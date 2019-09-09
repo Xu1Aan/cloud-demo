@@ -24,7 +24,7 @@ public class ConsumerController {
        // List<ServiceInstance> instances = discoveryClient.getInstances("user-service");
         //从实例中取出ip和端口
        // ServiceInstance serviceInstance = instances.get(0);
-        //随机，轮询，hash
+        // 随机，轮询，hash
        // String url = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/user/"+id;
         String url = "http://user-service/user/"+id;
         User user = restTemplate.getForObject(url, User.class);
