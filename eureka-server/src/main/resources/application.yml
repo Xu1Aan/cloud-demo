@@ -1,5 +1,5 @@
 server:
-  port: 10087
+  port: 10086
 spring:
   application:
     name: enreka-server
@@ -7,3 +7,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:10086/eureka/
+    register-with-eureka: false

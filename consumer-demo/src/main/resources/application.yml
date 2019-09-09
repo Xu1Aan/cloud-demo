@@ -2,7 +2,7 @@ server:
   port: 8088
 spring:
   application:
-    name:consumer-service
+    name: consumer-service
 eureka:
   client:
     service-url:
