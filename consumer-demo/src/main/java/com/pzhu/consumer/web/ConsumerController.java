@@ -28,6 +28,6 @@ public class ConsumerController {
        // String url = "http://"+serviceInstance.getHost()+":"+serviceInstance.getPort()+"/user/"+id;
         String url = "http://user-service/user/"+id;
         User user = restTemplate.getForObject(url, User.class);
-        return  user;
+        return user;
     }
 }
