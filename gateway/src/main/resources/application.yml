@@ -1,0 +1,7 @@
+server:
+  port: 10010
+zuul:
+  routes:
+    hehe:
+      path: /user-service/**
+      url: http://127.0.0.1:8081
