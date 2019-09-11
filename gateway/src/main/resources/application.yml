@@ -1,7 +1,19 @@
 server:
   port: 10010
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+spring:
+  application:
+    name: gateway
 zuul:
   routes:
-    hehe:
-      path: /user-service/**
-      url: http://127.0.0.1:8081
+    user-service: /user-service/**
+#      path: /user/**
+#      serviceId: user-service
+#      strip-prefix: false
+  #忽略服务
+#  ignored-services:
+#    - consumer-service
+
